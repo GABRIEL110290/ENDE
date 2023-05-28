@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador | Oracle+AluraLATAM</title>
+    <link rel="shortcut icon" href="logos/Logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=".reset,css.css">
+    <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="header_img">
+                <img src="logos/logo.svg" alt="Logo de Alura">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div class="encriptador">
+                <form class="encriptador_form">
+                    <div class="text_in">
+                        <textarea name="text_in_area" id="texto" placeholder="Ingrese el texto aqui" required></textarea>
+                        <div class="text_in_info">
+                            <div class="info">
+                                <img src="logos/exclamacion.svg" alt="">
+                                <p id="warning">Solo letras minúsculas y sin acentos</p>
+                            </div>
+                            <div class="text_in_btns">
+                                <input id="enc" type="button" value="Encriptar">
+                                <input id="des" type="button" value="Desencriptar">
+                            </div> 
+                        </div>
+                    </div>
+                </form>
+
+                <div class="text_out_sec">
+                    <div class="out_content">
+                        <div class="content" id="default">
+                            <div class="text_out_img">
+                                <img src="img/Muñeco.png" alt="Imagen de animada">
+                            </div><p>Ningún mensaje fue encontrado</p>
+                            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
+                        <div class = "content invisible" id="result">
+                            <textarea name="text_out_area" id="texto_out" disabled></textarea>
+                            <button id="copiar">Copiar</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </main>
+      <script src="encriptador.js"></script>
+    <footer class="pie-pagina">
+        <p>© 2023 Todos los derechos reservados GABRIEL GARAY | ORACLE+ALURALATAM </p>
+        <!--Siguientes hipervinculos a paginas externas-->
+        <a href="https://www.linkedin.com/in/gherrada22/" target="_blank" rel="noopener noreferrer"><img src="logos/linkedin.png" class="pgn" alt="icono Linkedin"></a>
+        <a href="https://github.com/GABRIEL110290/" target="_blank" rel="noopener noreferrer"><img src="logos/github.png" class="pgn" alt="icono GitHub"></a>
+        <a href="https://www.instagram.com/GABRIEL.GARAY.77377/" target="_blank" rel="noopener noreferrer"><img src="logos/instagram.png" class="pgn" alt="icono Instagram"></a>
+    </footer>
+</body>
+
+<script src="./encriptador.js"></script>
+</html>
